@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +23,8 @@ class MainActivity : AppCompatActivity() {
 
     fun btnIngresarOnClick(view: View)
     {
-        Toast.makeText(this,"Me presionaste!!", Toast.LENGTH_LONG).show()
+        val intent = Intent(this, ListaActivity::class.java)
+        startActivity(intent)
     }
 
 
