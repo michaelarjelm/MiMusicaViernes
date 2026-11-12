@@ -5,9 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="RoundedImageView">
-        <item name="cornerSize">50%</item>
-    </style>
-
     <style name="Theme.MiMusicaViernes" parent="Base.Theme.MiMusicaViernes" />
 </resources>

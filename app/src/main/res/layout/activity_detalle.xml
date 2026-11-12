@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="24sp">
+    <ImageButton
+        android:id="@+id/imgCaratulaDetalle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Caratula"/>
+
+    <TextView
+        android:id="@+id/txtCancionDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="26sp"
+        android:text="Fix You"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtArtistaDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Coldplay"
+        />
+
+    <TextView
+        android:id="@+id/txtGeneroDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alternativa"
+        />
+
+    <TextView
+        android:id="@+id/txtVecesDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Escuchada 12 veces"
+        />
+    <ImageButton
+        android:id="@+id/btnPlayDetalle"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:src="@android:drawable/ic_media_play"
+        android:background="@android:color/transparent"
+        android:contentDescription="Escuchar 30 segundos"/>
+    <Switch
+        android:id="@+id/swFavoritaDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Favorita"
+        android:checked="true"/>
+    <Button
+        android:id="@+id/btnEliminarDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:text="Eliminar de mi colección"/>
+</LinearLayout>
+
+</ScrollView>
