@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MiMusicaViernes"
+rootProject.name = "MiMusicaAsync"
 include(":app")
  

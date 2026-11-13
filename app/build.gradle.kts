@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mimusicaviernes"
+    namespace = "com.example.mimusicaasync"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.mimusicaviernes"
+        applicationId = "com.example.mimusicaasync"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
