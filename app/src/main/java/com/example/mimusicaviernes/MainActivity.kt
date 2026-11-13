@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     fun IngresarOnClick(view: View)
     {
-        val intent = Intent(this, DetalleActivity::class.java)
+        val intent = Intent(this, RegistroActivity::class.java)
         startActivity(intent)
     }
 }

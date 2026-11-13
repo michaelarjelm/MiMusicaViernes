@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiMusicaViernes">
         <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetalleActivity"
             android:exported="false" />
         <activity
