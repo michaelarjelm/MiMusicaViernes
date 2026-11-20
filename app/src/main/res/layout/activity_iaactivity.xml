@@ -134,6 +134,7 @@
             android:id="@+id/btnGenerarIA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="btnGenerarOnClick"
             android:layout_margin="8dp"
             android:text="Generar Playlist"/>
 

@@ -65,6 +65,7 @@
             android:id="@+id/btnIA"
             android:layout_width="48dp"
             android:layout_height="48dp"
+            android:onClick="btnIAOnClick"
             android:src="@android:drawable/star_big_on"
             android:background="@android:color/transparent"
             android:contentDescription="Playlist con IA"

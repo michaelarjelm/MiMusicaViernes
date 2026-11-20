@@ -25,4 +25,10 @@ class ListaActivity : AppCompatActivity() {
         val intent = Intent(this, BuscarActivity::class.java)
         startActivity(intent)
     }
+
+    fun btnIAOnClick(view: View)
+    {
+        val intent = Intent(this, IAActivity::class.java)
+        startActivity(intent)
+    }
 }
