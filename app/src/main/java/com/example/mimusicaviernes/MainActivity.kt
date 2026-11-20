@@ -2,6 +2,7 @@ package com.example.mimusicaviernes
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Patterns
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
@@ -24,14 +25,34 @@ class MainActivity : AppCompatActivity() {
 
     fun IngresarOnClick(view: View)
     {
+        // region Variables
         val edtCorreo=findViewById<EditText>(R.id.edtCorreo)
         val edtClave=findViewById<EditText>(R.id.edtClave)
 
         val correo = edtCorreo.text.toString()
         val clave = edtClave.text.toString()
 
-        Toast.makeText(this,"Hola, $correo", Toast.LENGTH_LONG).show()
+        //endregion
+        //region validaciones
+        if (correo.isEmpty())
+        {
+            edtCorreo.error="El correo es obligatorio"
+            edtCorreo.requestFocus()
+            return
+        }
 
+        if(!Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
+            edtCorreo.error="El formato del correo no es válido"
+            edtCorreo.requestFocus()
+            return
+        }
+        if(clave.length<6)
+        {
+            edtClave.error="Minimo 6 caracteres"
+            edtClave.requestFocus()
+            return
+        }
+        //endregion
         val intent = Intent(this, ListaActivity::class.java)
         startActivity(intent)
     }
